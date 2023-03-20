@@ -30,9 +30,9 @@ const Item = () => {
     <div className='flex flex-col items-center'>
         <h1 className='text-lg'>{item.name}</h1>
         <div>
-            <img src={item.images.icon} alt={item.name}/>
+            <img src={item && item.images && item.images.icon} alt={item && item.name}/>
         </div>
-        <p>{item.set.text}</p>
+        <p>{item && item.set && item.set.text}</p>
     </div>
   )
 }
