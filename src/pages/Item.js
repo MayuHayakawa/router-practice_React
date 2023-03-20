@@ -29,10 +29,10 @@ const Item = () => {
   return (
     <div className='flex flex-col items-center'>
         <h1 className='text-lg'>{item.name}</h1>
-        {/* <div>
+        <div>
             <img src={item.images.icon} alt={item.name}/>
         </div>
-        <p>{item.set.text}</p> */}
+        <p>{item.set.text}</p>
     </div>
   )
 }
